@@ -6,7 +6,7 @@ export default function UserDetails({children}) {
 
     return (
         <section>
-            <h1>UsersDetails</h1>
+            <h1>UsersDetails({router.query.id})</h1>
         </section>
     );
 }
