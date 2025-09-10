@@ -1,6 +1,6 @@
 import {useRouter} from "next/router"
 
-export default function Courses({children}) {
+export default function UserDetails({children}) {
 
     const route = useRouter()
     console.log("route in neste route dynamic: ", route);
