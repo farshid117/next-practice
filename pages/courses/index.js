@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Courses({children}) {
+export default function Courses() {
  
     const courses = [
         {id: 1 , title: "HTML" , shortName: "html" },
