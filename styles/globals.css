@@ -1,4 +1,56 @@
 @import "tailwindcss";
+/* todo Fontfamily style */
+@font-face {
+  font-family: "Vazir";
+  src: local("vazir"), local("Vazir"), local("vazir-normal"), local("Vazir-normal"), url("../public/fonts/Vazir.eot") format("opentype"), url("../public/fonts/Vazir.eot?#iefix") format("embedded-opentype"), url("../public/fonts/Vazir.woff2") format("woff2"), url("../public/fonts/Vazir.woff") format("woff"), url("../public/fonts/Vazir.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Vazir-Bold";
+  src: url("../public/fonts/Vazir-Bold.eot") format("opentype"), url("../public/fonts/Vazir-Bold.eot?#iefix") format("embedded-opentype"), url("../public/fonts/Vazir-Bold.woff2") format("woff2"), url("../public/fonts/Vazir-Bold.woff") format("woff"), url("../public/fonts/Vazir-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Vazir-Thin";
+  src: url("../public/fonts/Vazir-Thin.eot") format("opentype"), url("../public/fonts/Vazir-Thin.eot?#iefix") format("embedded-opentype"), url("../public/fonts/Vazir-Thin.woff2") format("woff2"), url("../public/fonts/Vazir-Thin.woff") format("woff"), url("../public/fonts/Vazir-Thin.ttf") format("truetype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Vazir-Light";
+  src: url("../public/fonts/Vazir-Light.eot") format("opentype"), url("../public/fonts/Vazir-Light.eot?#iefix") format("embedded-opentype"), url("../public/fonts/Vazir-Light.woff2") format("woff2"), url("../public/fonts/Vazir-Light.woff") format("woff"), url("../public/fonts/Vazir-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Vazir-Medium";
+  src: url("../public/fonts/Vazir-Medium.eot") format("opentype");
+  src: url("../public/fonts/Vazir-Medium.eot?#iefix") format("embedded-opentype"), url("../public/fonts/Vazir-Medium.woff2") format("woff2"), url("../public/fonts/Vazir-Medium.woff") format("woff"), url("../public/fonts/Vazir-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Vazir-Black";
+  src: url("../public/fonts/Vazir-Black.eot") format("opentype"), url("../public/fonts/Vazir-Black.eot?#iefix") format("embedded-opentype"), url("../public/fonts/Vazir-Black.woff2") format("woff2"), url("../public/fonts/Vazir-Black.woff") format("woff"), url("../public/fonts/Vazir-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+
+/* todo: YekanBakh Fonts */
+@font-face {
+  font-family: "YekanBakh";
+  src: url("../public/fonts/YekanBakh-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "YekanBakh Medium";
+  src: url("../public/fonts/YekanBakh-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "YekanBakh Bold";
+  src: url("../public/fonts/YekanBakh-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "YekanBakh Heavy";
+  src: url("../public/fonts/YekanBakh-Heavy.woff") format("woff");
+}
+
+/* ------------ End Font --------------- */
 
 :root {
   --background: #ffffff;
@@ -18,37 +70,14 @@
     --foreground: #ededed;
   }
 }
-/* khodam ezafe kardam */
-@font-face {
-  font-family: 'Geist';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/geist/v3/gyByhwUxId8gMEwYGFWfOw.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Geist';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/geist/v3/gyByhwUxId8gMEwSGFWfOw.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Geist';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/geist/v3/gyByhwUxId8gMEwcGFU.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+/* ---------------- */
+
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "YekanBakh";
   height: 100vh;
   display: flex;
   justify-content: center;
