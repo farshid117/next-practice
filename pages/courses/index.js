@@ -3,9 +3,9 @@ import Link from "next/link";
 export default function Courses({children}) {
  
     const courses = [
-        {id: 1 , title: "HTML" , ["course-short-name"]: "html" },
-        {id: 2 , title: "Css" , ["course-short-name"]: "css" },
-        {id: 3 , title: "Javascript" , ["course-short-name"]: "js" },
+        {id: 1 , title: "HTML" , shortName: "html" },
+        {id: 2 , title: "Css" , shortName: "css" },
+        {id: 3 , title: "Javascript" ,shortName : "js" },
     ]
 
     return (
@@ -16,7 +16,7 @@ export default function Courses({children}) {
                     {
                         courses.map(course => (
                             <li key={course.id}>
-                                <Link href={`/courses/${course["course-short-name"]}`}>{course.title}</Link>
+                                <Link href={`/courses/${course.shortName}`}>{course.title}</Link>
                             </li>
                         ))
                     }
