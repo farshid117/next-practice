@@ -1,0 +1,19 @@
+.title-bg{
+    background-color: red;
+    font-size: 5rem;
+    color: white;
+}
+.title{
+    background-color: red;
+    font-size: 5rem;
+    color: white;
+}
+
+.textColor{
+    color: green;
+}
+
+.bg-text{
+    text-align: center;
+    background: yellow;
+}
