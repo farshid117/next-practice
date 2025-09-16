@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Course from "../../components/Course";
 
 export default function Courses() {
  
@@ -15,9 +15,7 @@ export default function Courses() {
                 <ul>
                     {
                         courses.map(course => (
-                            <li key={course.id}>
-                                <Link href={`/courses/${course.shortName}`}>{course.title}</Link>
-                            </li>
+                            <Course {...course} />
                         ))
                     }
                 </ul>
