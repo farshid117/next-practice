@@ -8,7 +8,7 @@ function Articles() {
   return (
     <>
       <div className="title ">
-        <h1 className=' text-indigo-400 md: text-rose-500 border-4 ring-8 ring-amber-400 ' >Articles - index.js</h1>
+        <h1 className='text-indigo-400 md:text-rose-500 border-4 ring-8 ring-amber-400 ' >Articles - index.js</h1>
         
       </div>
 
